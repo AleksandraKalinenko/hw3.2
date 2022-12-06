@@ -54,13 +54,11 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
         int vklad = 15000;
-        int total = 0;
         int i = 0;
-        while (total <= 12_000_000) {
+        while (vklad <= 12_000_000) {
             i +=1;
-            total += total*0.07;
-            total += vklad;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+            vklad += vklad*0.07;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + vklad + " рублей");
         }
         System.out.println(i);
     }
@@ -106,7 +104,7 @@ public class Main {
             first += 7;
         }
     }
-    // никак не дойдёт, как убрать последний прогон, чтоб 33 число не выводилось((
+    // до меня никак не дойдёт, как убрать последний прогон, чтоб 33 число не выводилось((
 
     public static void task8 () {
         System.out.println("Задача 8");
